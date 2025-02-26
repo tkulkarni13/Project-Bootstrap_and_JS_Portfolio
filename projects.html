@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>Tejas Kulkarni's Projects</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-body-secondary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Tejas Kulkarni</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <section id="projects">
+            <h2 class="text-center m-3">Projects</h2>
+            <!--project descriptions, images, links, technologies, tools-->
+            <div class="accordion m-3" id="projects_accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            E-Commerce API
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>
+                                This API allows users to manage data in an e-commerce setting.
+                                The user can access API requests relating to customer management,
+                                customer account management, product management, and orders management.
+                                For each of these categories, there are routes to create new datapoints,
+                                read datapoints, update datapoints, and delete datapoints.
+                                The data is stored in a SQL database using Flask-SQLAlchemy for integration.
+                                In addition, there are routes with bonus funcionality if needed by the user.
+                                There is capability to view and manage stock levels of individual products,
+                                and an automatic restocking function when stock is low. A user could also view
+                                the complete order history of a specific customer, or calculate the total price of an order.
+                            </p>
+                            <a href="https://github.com/tkulkarni13/Mini-Project-E-Commerce-API">Project Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Library Management System
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>
+                                This application allows user to manage a library system via command line inputs.
+                                There are 3 core components to this library management system.
+                                Users are able to store information about books, users, authors.
+                                Users can add new books, users, and authors, to the system, and search for
+                                each of these at a later time. The newly added data is stored in a SQL database.
+                                There is also functionality to check out a book, and return it at a later date.
+                                There is one copy of each book available until checked out. Once a
+                                book has been checked out, it must be returned before it can be checked out
+                                again. All checked out books are stored in a table with a borrow and return date.
+                                This can be accessed to see overall how often people are using the library system.
+                                There is also functionality to view all books, authors, and users in the system.
+                                Users can also search for specific books by their title or isbn.
+                                This allows users to easily see which books are available and which arent.
+                            </p>
+                            <a href="https://github.com/tkulkarni13/Project-Library-Management-System-with-Databse-Integration">Project Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Contact Management System
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>
+                                This app provides user with the ability to store their contacts and additional
+                                information about them. Using the command line as an interface, the program
+                                will prompt the user for inputs when needed. This allows users to add new contacts,
+                                edit an existing contact, delete a contact, search for a contact, and import or
+                                export contacts to or from a text file.
+                            </p>
+                            <a href="https://github.com/tkulkarni13/Project-Contact-Management-System">Project Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
