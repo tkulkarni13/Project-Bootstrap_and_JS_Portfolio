@@ -37,3 +37,23 @@ function pickRandomCodingLanguage(languages) {
     return languages[i];
 }
 console.log(pickRandomCodingLanguage(languages))
+
+//Open accordion tabs based on which card is clicked.
+document.addEventListener("DOMContentLoaded", function() {
+    const params = new URLSearchParams(window.location.search)
+    const project = params.get("project");
+
+    if (project) {
+        const collapseElement = document.getElementById(`collapse${project}`);
+
+        if (collapseElement) {
+            const button = document.querySelector(`[data-bs-target="#collapse${project}"]`);
+            if (button) {
+                button.classList.remove("collapsed");
+                button.setAttribute("aria-expanded", "true");
+            }
+
+            collapseElement.classList.add("show")
+        }
+    }
+})
